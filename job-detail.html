@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Writer - Connect Nigeria Careers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cn-bg': '#FBFDF7',
+            'cn-green-light': '#F1F7EC',
+            'cn-border': '#D8E1D4',
+            'cn-text-secondary': '#5D6E61',
+            'cn-text-primary': '#0F1F14',
+            'cn-green': '#3FAD3E',
+            'cn-green-dark': '#00220A',
+            'cn-green-accent': '#004A28',
+            'cn-orange': '#F8910E',
+            'cn-card-bg': '#E7F3DF',
+            'cn-btn-text': '#F9FDF6',
+          },
+          fontFamily: {
+            'sora': ['Sora', 'sans-serif'],
+            'manrope': ['Manrope', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .glass-nav {
+      background: rgba(251, 253, 247, 0.85);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(216, 225, 212, 0.7);
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-cn-bg font-manrope text-cn-text-primary">
+
+  <!-- Navigation -->
+  <nav class="glass-nav fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8 h-[72px] flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html"><img src="images/logo.png" alt="Connect Nigeria" class="h-8 w-auto"></a>
+        <div class="w-px h-6 bg-cn-border"></div>
+        <span class="font-sora font-bold text-sm text-cn-text-secondary">Careers</span>
+      </div>
+      <div class="hidden lg:flex items-center gap-7">
+        <a href="index.html#why" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Why Connect Nigeria</a>
+        <a href="index.html#culture" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Culture & Values</a>
+        <a href="index.html#positions" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Open Positions</a>
+        <a href="index.html#process" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Hiring Process</a>
+        <a href="index.html#faq" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">FAQ</a>
+      </div>
+      <div class="hidden lg:flex items-center gap-2">
+        <a href="submit-cv.html" class="px-4 py-2 rounded-full border border-cn-border text-sm font-semibold text-cn-text-primary hover:bg-cn-green-light transition">Send Your CV</a>
+        <a href="index.html#positions" class="px-4 py-2 rounded-full bg-cn-green text-sm font-semibold text-cn-btn-text shadow-[0px_8px_16px_-4px_rgba(0,74,40,0.06)] hover:bg-cn-green-dark transition">View Open Positions</a>
+      </div>
+      <button id="mobileMenuBtn" class="lg:hidden p-2">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-0 bg-cn-bg z-[60] hidden flex-col pt-20 px-6">
+    <button id="closeMobileMenu" class="absolute top-5 right-6 p-2">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="flex flex-col gap-6 mt-8">
+      <a href="index.html#why" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Why Connect Nigeria</a>
+      <a href="index.html#culture" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Culture & Values</a>
+      <a href="index.html#positions" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Open Positions</a>
+      <a href="index.html#process" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Hiring Process</a>
+      <a href="index.html#faq" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">FAQ</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="pt-[72px]">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8 py-12">
+      <!-- Back Link -->
+      <a href="index.html#positions" class="inline-flex items-center gap-2 text-sm font-semibold text-cn-text-secondary hover:text-cn-text-primary transition mb-8">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 12L6 8l4-4"/></svg>
+        Back to Open Positions
+      </a>
+
+      <div class="grid lg:grid-cols-[1fr_380px] gap-12">
+        <!-- Left Column - Job Details -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="px-3 py-1 rounded-full bg-cn-card-bg text-xs font-semibold text-cn-green-dark">Content</span>
+            <span class="px-3 py-1 rounded-full border border-cn-border text-xs font-medium text-cn-text-secondary">Full-time</span>
+          </div>
+          <h1 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">Content Writer</h1>
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-cn-text-secondary mb-8">
+            <span class="flex items-center gap-2">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1C5.2 1 3 3.2 3 6C3 10 8 15 8 15s5-5 5-9c0-2.8-2.2-5-5-5z"/><circle cx="8" cy="6" r="2"/></svg>
+              Lagos, Nigeria
+            </span>
+            <span class="flex items-center gap-2">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5v4l2.5 1.5"/></svg>
+              Full-time
+            </span>
+            <span class="flex items-center gap-2">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 1v2M11 1v2M2 7h12"/></svg>
+              14 August 2026
+            </span>
+          </div>
+
+          <div class="border-t border-cn-border pt-8">
+            <h2 class="font-sora font-bold text-xl text-cn-text-primary mb-4">About the role</h2>
+            <p class="text-sm text-cn-text-secondary leading-relaxed mb-4">
+              Tell the stories of Nigerian businesses, people and ideas across our editorial channels. As a Content Writer at Connect Nigeria, you'll create compelling written content that informs, engages and inspires our audience.
+            </p>
+            <p class="text-sm text-cn-text-secondary leading-relaxed mb-4">
+              You'll work closely with the product, marketing and design teams to produce content that drives engagement and supports business goals. From blog posts and social media copy to product descriptions and email campaigns, you'll have the opportunity to shape how Connect Nigeria communicates with the world.
+            </p>
+          </div>
+
+          <div class="border-t border-cn-border pt-8 mt-8">
+            <h2 class="font-sora font-bold text-xl text-cn-text-primary mb-4">Key responsibilities</h2>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Write clear, engaging and SEO-optimised content for blog posts, landing pages and social media</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Research Nigerian businesses, industries and trends to produce informed editorial pieces</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Collaborate with designers and marketers to create compelling campaigns</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Edit and proofread content to maintain brand voice and quality standards</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Track content performance and suggest improvements based on data</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Contribute to content strategy and editorial calendar planning</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="border-t border-cn-border pt-8 mt-8">
+            <h2 class="font-sora font-bold text-xl text-cn-text-primary mb-4">Requirements</h2>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">2+ years of professional content writing experience</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Excellent written English with strong grammar and storytelling skills</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Experience with SEO best practices and content management systems</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Ability to manage multiple projects and meet deadlines</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Familiarity with Nigerian business landscape is a plus</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="border-t border-cn-border pt-8 mt-8">
+            <h2 class="font-sora font-bold text-xl text-cn-text-primary mb-4">Benefits</h2>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <svg class="flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Competitive salary and performance bonuses</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Remote-friendly work environment</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Health insurance and wellness benefits</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Professional development opportunities</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="flex-shrink-0" width="16" height="16" fill="none" stroke="#3FAD3E" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>
+                <span class="text-sm text-cn-text-secondary">Flexible working hours</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column - Apply Card -->
+        <div class="lg:sticky lg:top-24">
+          <div class="bg-white border border-cn-border rounded-[28px] p-5 sm:p-8 shadow-[0px_24px_48px_-24px_rgba(0,74,40,0.2),0px_2px_4px_rgba(0,74,40,0.06)]">
+            <h3 class="font-sora font-bold text-xl text-cn-text-primary mb-2">Apply for this role</h3>
+            <p class="text-sm text-cn-text-secondary mb-6">Submit your application and our recruitment team will review it.</p>
+            <a href="application-form.html" class="block w-full text-center px-6 py-3.5 rounded-full bg-cn-green text-sm font-semibold text-cn-btn-text shadow-[0px_8px_16px_-4px_rgba(0,74,40,0.06)] hover:bg-cn-green-dark transition">
+              Apply Now
+            </a>
+            <div class="border-t border-cn-border mt-6 pt-6">
+              <h4 class="font-sora font-bold text-sm text-cn-text-primary mb-3">Job Summary</h4>
+              <div class="space-y-3">
+                <div class="flex justify-between text-sm">
+                  <span class="text-cn-text-secondary">Department</span>
+                  <span class="font-medium text-cn-text-primary">Content</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-cn-text-secondary">Employment type</span>
+                  <span class="font-medium text-cn-text-primary">Full-time</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-cn-text-secondary">Location</span>
+                  <span class="font-medium text-cn-text-primary">Lagos, Nigeria</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-cn-text-secondary">Posted date</span>
+                  <span class="font-medium text-cn-text-primary">14 August 2026</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-cn-text-secondary">Salary range</span>
+                  <span class="font-medium text-cn-text-primary">Competitive</span>
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-cn-border mt-6 pt-6">
+              <h4 class="font-sora font-bold text-sm text-cn-text-primary mb-3">Share this job</h4>
+              <div class="flex gap-3">
+                <button class="w-10 h-10 rounded-full border border-cn-border flex items-center justify-center hover:bg-cn-green-light transition">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </button>
+                <button class="w-10 h-10 rounded-full border border-cn-border flex items-center justify-center hover:bg-cn-green-light transition">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </button>
+                <button class="w-10 h-10 rounded-full border border-cn-border flex items-center justify-center hover:bg-cn-green-light transition">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-cn-green-light border-t border-cn-border mt-16">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <img src="images/logo.png" alt="Connect Nigeria" class="h-9 w-auto mb-4">
+          <p class="text-sm text-cn-text-secondary leading-relaxed max-w-[348px]">Organising Nigeria's information and making it easy to find and use — for businesses, professionals and everyone in between.</p>
+        </div>
+        <div>
+          <h4 class="font-manrope font-bold text-xs text-cn-text-primary uppercase tracking-wider mb-4">Careers</h4>
+          <ul class="flex flex-col gap-3">
+            <li><a href="index.html#positions" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Open Positions</a></li>
+            <li><a href="index.html#process" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Hiring Process</a></li>
+            <li><a href="submit-cv.html" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Send Your CV</a></li>
+            <li><a href="index.html#faq" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-manrope font-bold text-xs text-cn-text-primary uppercase tracking-wider mb-4">About</h4>
+          <ul class="flex flex-col gap-3">
+            <li><a href="index.html#culture" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Our Culture</a></li>
+            <li><a href="index.html#culture" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Our Values</a></li>
+            <li><a href="index.html#why" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Why Join Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-manrope font-bold text-xs text-cn-text-primary uppercase tracking-wider mb-4">Connect</h4>
+          <ul class="flex flex-col gap-3">
+            <li><a href="#" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Business</a></li>
+            <li><a href="#" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Articles</a></li>
+            <li><a href="#" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-cn-border">
+      <div class="max-w-[1280px] mx-auto px-5 lg:px-8 py-6 text-center">
+        <p class="text-xs text-cn-text-secondary">&copy; 2026 ConnectNigeria.com — All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.remove('hidden');
+      document.getElementById('mobileMenu').classList.add('flex');
+    });
+    document.getElementById('closeMobileMenu').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.add('hidden');
+      document.getElementById('mobileMenu').classList.remove('flex');
+    });
+  </script>
+</body>
+</html>

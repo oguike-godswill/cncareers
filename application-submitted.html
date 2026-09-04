@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Submitted - Connect Nigeria Careers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cn-bg': '#FBFDF7',
+            'cn-green-light': '#F1F7EC',
+            'cn-border': '#D8E1D4',
+            'cn-text-secondary': '#5D6E61',
+            'cn-text-primary': '#0F1F14',
+            'cn-green': '#3FAD3E',
+            'cn-green-dark': '#00220A',
+            'cn-green-accent': '#004A28',
+            'cn-orange': '#F8910E',
+            'cn-card-bg': '#E7F3DF',
+            'cn-btn-text': '#F9FDF6',
+          },
+          fontFamily: {
+            'sora': ['Sora', 'sans-serif'],
+            'manrope': ['Manrope', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .glass-nav {
+      background: rgba(251, 253, 247, 0.85);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(216, 225, 212, 0.7);
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-cn-bg font-manrope text-cn-text-primary">
+
+  <!-- Navigation -->
+  <nav class="glass-nav fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8 h-[72px] flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html"><img src="images/logo.png" alt="Connect Nigeria" class="h-8 w-auto"></a>
+        <div class="w-px h-6 bg-cn-border"></div>
+        <span class="font-sora font-bold text-sm text-cn-text-secondary">Careers</span>
+      </div>
+      <div class="hidden lg:flex items-center gap-7">
+        <a href="index.html#why" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Why Connect Nigeria</a>
+        <a href="index.html#culture" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Culture & Values</a>
+        <a href="index.html#positions" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Open Positions</a>
+        <a href="index.html#process" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Hiring Process</a>
+        <a href="index.html#faq" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">FAQ</a>
+      </div>
+      <div class="hidden lg:flex items-center gap-2">
+        <a href="submit-cv.html" class="px-4 py-2 rounded-full border border-cn-border text-sm font-semibold text-cn-text-primary hover:bg-cn-green-light transition">Send Your CV</a>
+        <a href="index.html#positions" class="px-4 py-2 rounded-full bg-cn-green text-sm font-semibold text-cn-btn-text shadow-[0px_8px_16px_-4px_rgba(0,74,40,0.06)] hover:bg-cn-green-dark transition">View Open Positions</a>
+      </div>
+      <button id="mobileMenuBtn" class="lg:hidden p-2">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-0 bg-cn-bg z-[60] hidden flex-col pt-20 px-6">
+    <button id="closeMobileMenu" class="absolute top-5 right-6 p-2">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="flex flex-col gap-6 mt-8">
+      <a href="index.html#why" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Why Connect Nigeria</a>
+      <a href="index.html#culture" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Culture & Values</a>
+      <a href="index.html#positions" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Open Positions</a>
+      <a href="index.html#process" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Hiring Process</a>
+      <a href="index.html#faq" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">FAQ</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="pt-[72px]">
+    <div class="max-w-[780px] mx-auto px-5 lg:px-8 py-12">
+      <!-- Success Card -->
+        <div class="bg-white border border-cn-border rounded-[28px] p-6 sm:p-10 shadow-[0px_24px_48px_-24px_rgba(0,74,40,0.2),0px_2px_4px_rgba(0,74,40,0.06)] text-center">
+        <div class="w-20 h-20 rounded-full bg-cn-green flex items-center justify-center mx-auto mb-6">
+          <svg width="40" height="40" fill="none" stroke="white" stroke-width="3"><path d="M10 20l8 8 16-16"/></svg>
+        </div>
+        <h1 class="font-sora text-2xl sm:text-3xl lg:text-[36px] font-bold leading-tight lg:leading-[40px] tracking-[-0.02em] mb-3">Application submitted!</h1>
+        <p class="text-base text-cn-text-secondary leading-relaxed max-w-[480px] mx-auto mb-8">
+          Thank you for applying for the <strong class="text-cn-text-primary">Content Writer</strong> position at Connect Nigeria. Our recruitment team will review your application and get back to you within 2 weeks.
+        </p>
+
+        <div class="bg-cn-green-light rounded-2xl p-6 max-w-[400px] mx-auto mb-8">
+          <h3 class="font-sora font-bold text-base text-cn-text-primary mb-4">What happens next?</h3>
+          <div class="space-y-4 text-left">
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full bg-cn-green flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="font-sora font-bold text-[10px] text-white">1</span>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-cn-text-primary">Application review</p>
+                <p class="text-xs text-cn-text-secondary">Our team will review your CV and cover letter</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full bg-cn-border flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="font-sora font-bold text-[10px] text-cn-text-secondary">2</span>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-cn-text-primary">Email update</p>
+                <p class="text-xs text-cn-text-secondary">You'll receive an update via email within 2 weeks</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full bg-cn-border flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="font-sora font-bold text-[10px] text-cn-text-secondary">3</span>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-cn-text-primary">Interview process</p>
+                <p class="text-xs text-cn-text-secondary">Shortlisted candidates will be invited for interviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="index.html#positions" class="px-6 py-3 rounded-full bg-cn-green text-sm font-semibold text-cn-btn-text shadow-[0px_8px_16px_-4px_rgba(0,74,40,0.06)] hover:bg-cn-green-dark transition">
+            Browse More Positions
+          </a>
+          <a href="index.html" class="px-6 py-3 rounded-full border border-cn-border text-sm font-semibold text-cn-text-primary hover:bg-cn-green-light transition">
+            Back to Careers Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-cn-green-light border-t border-cn-border mt-16">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <img src="images/logo.png" alt="Connect Nigeria" class="h-9 w-auto mb-4">
+          <p class="text-sm text-cn-text-secondary leading-relaxed max-w-[348px]">Organising Nigeria's information and making it easy to find and use — for businesses, professionals and everyone in between.</p>
+        </div>
+        <div>
+          <h4 class="font-manrope font-bold text-xs text-cn-text-primary uppercase tracking-wider mb-4">Careers</h4>
+          <ul class="flex flex-col gap-3">
+            <li><a href="index.html#positions" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Open Positions</a></li>
+            <li><a href="index.html#process" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Hiring Process</a></li>
+            <li><a href="submit-cv.html" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Send Your CV</a></li>
+            <li><a href="index.html#faq" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-manrope font-bold text-xs text-cn-text-primary uppercase tracking-wider mb-4">About</h4>
+          <ul class="flex flex-col gap-3">
+            <li><a href="index.html#culture" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Our Culture</a></li>
+            <li><a href="index.html#culture" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Our Values</a></li>
+            <li><a href="index.html#why" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Why Join Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-manrope font-bold text-xs text-cn-text-primary uppercase tracking-wider mb-4">Connect</h4>
+          <ul class="flex flex-col gap-3">
+            <li><a href="#" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Business</a></li>
+            <li><a href="#" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Articles</a></li>
+            <li><a href="#" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-cn-border">
+      <div class="max-w-[1280px] mx-auto px-5 lg:px-8 py-6 text-center">
+        <p class="text-xs text-cn-text-secondary">&copy; 2026 ConnectNigeria.com — All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.remove('hidden');
+      document.getElementById('mobileMenu').classList.add('flex');
+    });
+    document.getElementById('closeMobileMenu').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.add('hidden');
+      document.getElementById('mobileMenu').classList.remove('flex');
+    });
+  </script>
+</body>
+</html>

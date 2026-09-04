@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers - Connect Nigeria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cn-bg': '#FBFDF7',
+            'cn-green-light': '#F1F7EC',
+            'cn-border': '#D8E1D4',
+            'cn-text-secondary': '#5D6E61',
+            'cn-text-primary': '#0F1F14',
+            'cn-green': '#3FAD3E',
+            'cn-green-dark': '#00220A',
+            'cn-green-accent': '#004A28',
+            'cn-orange': '#F8910E',
+            'cn-card-bg': '#E7F3DF',
+            'cn-btn-text': '#F9FDF6',
+          },
+          fontFamily: {
+            'sora': ['Sora', 'sans-serif'],
+            'manrope': ['Manrope', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .glass-nav {
+      background: rgba(251, 253, 247, 0.85);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(216, 225, 212, 0.7);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(136, 211, 67, 0.6) 0%, rgba(49, 195, 90, 0.6) 100%);
+      filter: blur(64px);
+    }
+    .dark-gradient {
+      background: linear-gradient(150deg, #00331B 0%, #005827 100%);
+    }
+    .tipp-gradient {
+      background: linear-gradient(135deg, #00331B 0%, #005827 100%);
+    }
+    .upload-area {
+      border: 2px dashed #D8E1D4;
+    }
+    .upload-area:hover {
+      border-color: #3FAD3E;
+    }
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    .faq-content.open {
+      max-height: 500px;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-cn-bg font-manrope text-cn-text-primary">
+
+  <!-- Navigation -->
+  <nav class="glass-nav fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8 h-[72px] flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Connect Nigeria" class="h-8 w-auto">
+        <div class="w-px h-6 bg-cn-border"></div>
+        <span class="font-sora font-bold text-sm text-cn-text-secondary">Careers</span>
+      </div>
+      <div class="hidden lg:flex items-center gap-7">
+        <a href="#why" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Why Connect Nigeria</a>
+        <a href="#culture" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Culture & Values</a>
+        <a href="#positions" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Open Positions</a>
+        <a href="#process" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">Hiring Process</a>
+        <a href="#faq" class="text-sm font-medium text-cn-text-secondary hover:text-cn-text-primary transition">FAQ</a>
+      </div>
+      <div class="hidden lg:flex items-center gap-2">
+        <a href="submit-cv.html" class="px-4 py-2 rounded-full border border-cn-border text-sm font-semibold text-cn-text-primary hover:bg-cn-green-light transition">Send Your CV</a>
+        <a href="#positions" class="px-4 py-2 rounded-full bg-cn-green text-sm font-semibold text-cn-btn-text shadow-[0px_8px_16px_-4px_rgba(0,74,40,0.06)] hover:bg-cn-green-dark transition">View Open Positions</a>
+      </div>
+      <button id="mobileMenuBtn" class="lg:hidden p-2">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-0 bg-cn-bg z-[60] hidden flex-col pt-20 px-6">
+    <button id="closeMobileMenu" class="absolute top-5 right-6 p-2">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="flex flex-col gap-6 mt-8">
+      <a href="#why" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Why Connect Nigeria</a>
+      <a href="#culture" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Culture & Values</a>
+      <a href="#positions" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Open Positions</a>
+      <a href="#process" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">Hiring Process</a>
+      <a href="#faq" class="text-lg font-medium text-cn-text-secondary mobile-nav-link">FAQ</a>
+    </div>
+    <div class="flex flex-col gap-3 mt-8">
+      <a href="submit-cv.html" class="px-4 py-3 rounded-full border border-cn-border text-center text-sm font-semibold text-cn-text-primary">Send Your CV</a>
+      <a href="#positions" class="px-4 py-3 rounded-full bg-cn-green text-center text-sm font-semibold text-cn-btn-text">View Open Positions</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative pt-[72px] overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full">
+      <div class="hero-gradient absolute top-0 left-1/4 w-[1440px] h-[1440px] opacity-40"></div>
+    </div>
+    <div class="relative max-w-[1280px] mx-auto px-5 lg:px-8 py-16 lg:py-24">
+      <div class="grid lg:grid-cols-[1fr_551px] gap-14 items-center">
+        <div class="max-w-[609px]">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cn-card-bg mb-8">
+            <span class="w-2 h-2 rounded-full bg-cn-green"></span>
+            <span class="text-xs font-semibold text-cn-green-dark tracking-wide uppercase">We're hiring across product, technology & business</span>
+          </div>
+          <h1 class="font-sora text-3xl sm:text-4xl lg:text-[65.6px] font-extrabold leading-tight lg:leading-[67.57px] tracking-[-0.02em] mb-6">
+            Build the future with <span class="text-cn-green-accent">Connect Nigeria</span>
+          </h1>
+          <p class="text-base text-cn-text-secondary leading-relaxed mb-8 max-w-[576px]">
+            Join a team working to make information, opportunities, and business connections easier to find across Nigeria.
+          </p>
+          <div class="flex flex-wrap gap-3 mb-16">
+            <a href="#positions" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-cn-green text-sm font-semibold text-cn-btn-text shadow-[0px_24px_48px_-24px_rgba(0,74,40,0.06),0px_2px_4px_rgba(0,74,40,0.06)] hover:bg-cn-green-dark transition">
+              View Open Positions
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+            <a href="submit-cv.html" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-cn-border text-sm font-semibold text-cn-text-primary hover:bg-cn-green-light transition">
+              Send Your CV
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-8 sm:gap-12">
+            <div>
+              <span class="font-manrope text-4xl font-extrabold text-cn-green-accent">6</span>
+              <p class="text-xs font-medium text-cn-text-secondary uppercase tracking-wider mt-1">Open roles</p>
+            </div>
+            <div>
+              <span class="font-manrope text-4xl font-extrabold text-cn-green-accent">5</span>
+              <p class="text-xs font-medium text-cn-text-secondary uppercase tracking-wider mt-1">Teams hiring</p>
+            </div>
+            <div>
+              <span class="font-manrope text-4xl font-extrabold text-cn-green-accent">2 wks</span>
+              <p class="text-xs font-medium text-cn-text-secondary uppercase tracking-wider mt-1">Avg. first response</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative hidden lg:block">
+          <div class="rounded-[32px] overflow-hidden shadow-[0px_24px_48px_-24px_rgba(0,74,40,0.4),0px_2px_4px_rgba(0,74,40,0.06)]">
+            <img src="images/hero-team.png" alt="Team collaboration" class="w-full h-[546px] object-cover">
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-5 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] max-w-[342px]">
+            <p class="font-sora font-bold text-base text-cn-text-primary mb-1">Lagos & remote-friendly</p>
+            <p class="text-sm text-cn-text-secondary leading-relaxed">Work on products used by hundreds of thousands of Nigerians every month.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Connect Nigeria -->
+  <section id="why" class="py-16 lg:py-28 bg-cn-green-light">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+      <div class="inline-flex items-center gap-2 mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+        <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">Why Connect Nigeria</span>
+      </div>
+      <div class="max-w-[672px]">
+        <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">Reasons people stay, and grow, here</h2>
+        <p class="text-base text-cn-text-secondary leading-relaxed">We're a team of builders, writers, sellers and operators working on one shared mission: organising Nigeria's information and making it easy to find and use.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+        <!-- Card 1 -->
+        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M10 2l2.5 5 5.5.8-4 3.9.9 5.3L10 14.5 5.1 17l.9-5.3-4-3.9 5.5-.8z"/></svg>
+          </div>
+          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Meaningful Work</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed">Work on products and initiatives that connect people, businesses and opportunities across Nigeria.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M4 16l4-4 3 3 5-6"/><path d="M14 6h4v4"/></svg>
+          </div>
+          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Growth & Learning</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed">Opportunities to develop new skills and take on meaningful responsibilities.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Collaborative Team</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed">Work with people across product, technology, business, content and operations.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Ownership</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed">Employees are encouraged to take responsibility for their work and contribute ideas.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M12.24 12.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M12.24 11.76l2.83-2.83"/></svg>
+          </div>
+          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Innovation</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed">Solve real problems for Nigerian businesses and consumers with products that ship.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Career Development</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed">Grow professionally as the company and its products evolve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture & Values -->
+  <section id="culture" class="py-16 lg:py-28 bg-cn-bg">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+      <div class="inline-flex items-center gap-2 mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+        <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">Our Culture & Values</span>
+      </div>
+      <div class="max-w-[672px]">
+        <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">How we work with each other</h2>
+        <p class="text-base text-cn-text-secondary leading-relaxed">Our culture is practical. We keep teams small, decisions close to the work, and feedback direct. Four values guide everything we ship.</p>
+      </div>
+      <div class="grid lg:grid-cols-[551px_1fr] gap-14 mt-10">
+        <!-- Photos -->
+        <div class="relative">
+          <div class="flex gap-4 sm:gap-7">
+            <div class="rounded-[28px] overflow-hidden w-[calc(50%-8px)] sm:w-[267px] aspect-square">
+              <img src="images/culture-1.png" alt="Colleagues in conversation" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-[28px] overflow-hidden w-[calc(50%-8px)] sm:w-[267px] h-[200px] sm:h-[334px]">
+              <img src="images/culture-2.png" alt="Engineer at work" class="w-full h-full object-cover">
+            </div>
+          </div>
+          <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 tipp-gradient rounded-[22px] px-5 py-3 text-center">
+            <p class="font-sora font-bold text-sm text-white tracking-widest">TIPP</p>
+            <p class="text-[11px] text-white/80">Our core values</p>
+          </div>
+        </div>
+        <!-- TIPP Values -->
+        <div class="flex flex-col gap-4">
+          <!-- Teamwork -->
+          <div class="bg-white border border-cn-border rounded-[22px] p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+            <div class="w-10 h-10 rounded-full bg-cn-green-accent flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-sm text-white">T</span>
+            </div>
+            <div>
+              <h4 class="font-sora font-bold text-base text-cn-text-primary mb-1">Teamwork</h4>
+              <p class="text-sm text-cn-text-secondary leading-relaxed">We work together, share knowledge and support one another to achieve better outcomes.</p>
+            </div>
+          </div>
+          <!-- Innovation -->
+          <div class="bg-white border border-cn-border rounded-[22px] p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+            <div class="w-10 h-10 rounded-full bg-cn-green-accent flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-sm text-white">I</span>
+            </div>
+            <div>
+              <h4 class="font-sora font-bold text-base text-cn-text-primary mb-1">Innovation</h4>
+              <p class="text-sm text-cn-text-secondary leading-relaxed">We look for better ways to solve problems and create value for our users and customers.</p>
+            </div>
+          </div>
+          <!-- Professionalism -->
+          <div class="bg-white border border-cn-border rounded-[22px] p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+            <div class="w-10 h-10 rounded-full bg-cn-green-accent flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-sm text-white">P</span>
+            </div>
+            <div>
+              <h4 class="font-sora font-bold text-base text-cn-text-primary mb-1">Professionalism</h4>
+              <p class="text-sm text-cn-text-secondary leading-relaxed">We hold ourselves to high standards in how we work, communicate, and deliver.</p>
+            </div>
+          </div>
+          <!-- Passion -->
+          <div class="bg-white border border-cn-border rounded-[22px] p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
+            <div class="w-10 h-10 rounded-full bg-cn-green-accent flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-sm text-white">P</span>
+            </div>
+            <div>
+              <h4 class="font-sora font-bold text-base text-cn-text-primary mb-1">Passion</h4>
+              <p class="text-sm text-cn-text-secondary leading-relaxed">We care about what we do and are committed to making a meaningful impact.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Positions -->
+  <section id="positions" class="py-16 lg:py-28 bg-cn-green-light">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+      <div class="inline-flex items-center gap-2 mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+        <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">Open Positions</span>
+      </div>
+      <div class="max-w-[672px]">
+        <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">Find your role</h2>
+        <p class="text-base text-cn-text-secondary leading-relaxed">Search by title or keyword, then narrow by department and employment type.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <div class="relative flex-1">
+          <svg class="absolute left-4 top-1/2 -translate-y-1/2 text-cn-text-secondary" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="5"/><path d="M14 14l-3-3"/></svg>
+          <input type="text" id="searchInput" placeholder="Search job title or keyword" class="w-full h-12 pl-11 pr-4 rounded-[18px] border border-cn-border bg-white text-sm font-manrope focus:outline-none focus:border-cn-green">
+        </div>
+        <select id="deptFilter" class="h-12 px-4 rounded-[18px] border border-cn-border bg-white text-sm font-manrope text-cn-text-secondary focus:outline-none focus:border-cn-green w-full sm:w-auto sm:min-w-[220px]">
+          <option value="">Department: All</option>
+          <option value="Product">Product</option>
+          <option value="Technology">Technology</option>
+          <option value="Content">Content</option>
+          <option value="Business">Business</option>
+          <option value="Design">Design</option>
+          <option value="Operations">Operations</option>
+        </select>
+        <select id="typeFilter" class="h-12 px-4 rounded-[18px] border border-cn-border bg-white text-sm font-manrope text-cn-text-secondary focus:outline-none focus:border-cn-green w-full sm:w-auto sm:min-w-[220px]">
+          <option value="">Employment type: All</option>
+          <option value="Full-time">Full-time</option>
+          <option value="Contract">Contract</option>
+        </select>
+      </div>
+
+      <div class="mt-4 mb-8">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cn-card-bg text-xs font-bold text-cn-green-dark">
+          <span id="roleCount">6</span> roles available
+        </span>
+      </div>
+
+      <!-- Job Cards Grid -->
+      <div id="jobGrid" class="grid md:grid-cols-2 gap-4">
+        <!-- Card 1: Product Manager -->
+        <div class="job-card bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] flex flex-col justify-between" data-dept="Product" data-type="Full-time">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-cn-card-bg text-xs font-semibold text-cn-green-dark">Product</span>
+              <span class="px-3 py-1 rounded-full border border-cn-border text-xs font-medium text-cn-text-secondary">Full-time</span>
+            </div>
+            <h3 class="font-sora font-bold text-xl text-cn-text-primary mb-2">Product Manager</h3>
+            <p class="text-sm text-cn-text-secondary leading-relaxed mb-4">Own the roadmap for products that connect Nigerian businesses with the customers who need them.</p>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-cn-border">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-cn-text-secondary">
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 1C4.5 1 2.5 3 2.5 5.5C2.5 9 7 13 7 13s4.5-4 4.5-7.5C11.5 3 9.5 1 7 1z"/><circle cx="7" cy="5.5" r="1.5"/></svg>
+                Lagos, Nigeria
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.5"/><path d="M7 4v3l2 1.5"/></svg>
+                Full-time
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1.5" y="2.5" width="11" height="9" rx="1"/><path d="M4.5 1v2M9.5 1v2M1.5 6h11"/></svg>
+                27 August 2026
+              </span>
+            </div>
+            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Frontend Engineer -->
+        <div class="job-card bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] flex flex-col justify-between" data-dept="Technology" data-type="Full-time">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-cn-card-bg text-xs font-semibold text-cn-green-dark">Technology</span>
+              <span class="px-3 py-1 rounded-full border border-cn-border text-xs font-medium text-cn-text-secondary">Full-time</span>
+            </div>
+            <h3 class="font-sora font-bold text-xl text-cn-text-primary mb-2">Frontend Engineer</h3>
+            <p class="text-sm text-cn-text-secondary leading-relaxed mb-4">Build fast, accessible interfaces used by hundreds of thousands of Nigerians every month.</p>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-cn-border">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-cn-text-secondary">
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 1C4.5 1 2.5 3 2.5 5.5C2.5 9 7 13 7 13s4.5-4 4.5-7.5C11.5 3 9.5 1 7 1z"/><circle cx="7" cy="5.5" r="1.5"/></svg>
+                Lagos, Nigeria
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.5"/><path d="M7 4v3l2 1.5"/></svg>
+                Full-time
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1.5" y="2.5" width="11" height="9" rx="1"/><path d="M4.5 1v2M9.5 1v2M1.5 6h11"/></svg>
+                20 August 2026
+              </span>
+            </div>
+            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+          </div>
+        </div>
+
+        <!-- Card 3: Content Writer -->
+        <div class="job-card bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] flex flex-col justify-between" data-dept="Content" data-type="Full-time">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-cn-card-bg text-xs font-semibold text-cn-green-dark">Content</span>
+              <span class="px-3 py-1 rounded-full border border-cn-border text-xs font-medium text-cn-text-secondary">Full-time</span>
+            </div>
+            <h3 class="font-sora font-bold text-xl text-cn-text-primary mb-2">Content Writer</h3>
+            <p class="text-sm text-cn-text-secondary leading-relaxed mb-4">Tell the stories of Nigerian businesses, people and ideas across our editorial channels.</p>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-cn-border">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-cn-text-secondary">
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 1C4.5 1 2.5 3 2.5 5.5C2.5 9 7 13 7 13s4.5-4 4.5-7.5C11.5 3 9.5 1 7 1z"/><circle cx="7" cy="5.5" r="1.5"/></svg>
+                Lagos, Nigeria
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.5"/><path d="M7 4v3l2 1.5"/></svg>
+                Full-time
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1.5" y="2.5" width="11" height="9" rx="1"/><path d="M4.5 1v2M9.5 1v2M1.5 6h11"/></svg>
+                14 August 2026
+              </span>
+            </div>
+            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Business Development Executive -->
+        <div class="job-card bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] flex flex-col justify-between" data-dept="Business" data-type="Full-time">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-cn-card-bg text-xs font-semibold text-cn-green-dark">Business</span>
+              <span class="px-3 py-1 rounded-full border border-cn-border text-xs font-medium text-cn-text-secondary">Full-time</span>
+            </div>
+            <h3 class="font-sora font-bold text-xl text-cn-text-primary mb-2">Business Development Executive</h3>
+            <p class="text-sm text-cn-text-secondary leading-relaxed mb-4">Help Nigerian businesses grow by connecting them to the right advertising and listing solutions.</p>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-cn-border">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-cn-text-secondary">
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 1C4.5 1 2.5 3 2.5 5.5C2.5 9 7 13 7 13s4.5-4 4.5-7.5C11.5 3 9.5 1 7 1z"/><circle cx="7" cy="5.5" r="1.5"/></svg>
+                Lagos, Nigeria
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.5"/><path d="M7 4v3l2 1.5"/></svg>
+                Full-time
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1.5" y="2.5" width="11" height="9" rx="1"/><path d="M4.5 1v2M9.5 1v2M1.5 6h11"/></svg>
+                8 August 2026
+              </span>
+            </div>
+            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+          </div>
+        </div>
+
+        <!-- Card 5: Graphic Designer -->
+        <div class="job-card bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] flex flex-col justify-between" data-dept="Design" data-type="Contract">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-cn-card-bg text-xs font-semibold text-cn-green-dark">Design</span>
+              <span class="px-3 py-1 rounded-full border border-cn-border text-xs font-medium text-cn-text-secondary">Contract</span>
+            </div>
+            <h3 class="font-sora font-bold text-xl text-cn-text-primary mb-2">Graphic Designer</h3>
+            <p class="text-sm text-cn-text-secondary leading-relaxed mb-4">Create visual work that makes our products, campaigns and events unmistakably Connect Nigeria.</p>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-cn-border">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-cn-text-secondary">
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 1C4.5 1 2.5 3 2.5 5.5C2.5 9 7 13 7 13s4.5-4 4.5-7.5C11.5 3 9.5 1 7 1z"/><circle cx="7" cy="5.5" r="1.5"/></svg>
+                Lagos, Nigeria
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.5"/><path d="M7 4v3l2 1.5"/></svg>
+                Contract
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1.5" y="2.5" width="11" height="9" rx="1"/><path d="M4.5 1v2M9.5 1v2M1.5 6h11"/></svg>
+                2 August 2026
+              </span>
+            </div>
+            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+          </div>
+        </div>
+
+        <!-- Card 6: Customer Support Officer -->
+        <div class="job-card bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] flex flex-col justify-between" data-dept="Operations" data-type="Full-time">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-cn-card-bg text-xs font-semibold text-cn-green-dark">Operations</span>
+              <span class="px-3 py-1 rounded-full border border-cn-border text-xs font-medium text-cn-text-secondary">Full-time</span>
+            </div>
+            <h3 class="font-sora font-bold text-xl text-cn-text-primary mb-2">Customer Support Officer</h3>
+            <p class="text-sm text-cn-text-secondary leading-relaxed mb-4">Be the first point of contact for the businesses and individuals who rely on our platform.</p>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-cn-border">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-cn-text-secondary">
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 1C4.5 1 2.5 3 2.5 5.5C2.5 9 7 13 7 13s4.5-4 4.5-7.5C11.5 3 9.5 1 7 1z"/><circle cx="7" cy="5.5" r="1.5"/></svg>
+                Lagos, Nigeria
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.5"/><path d="M7 4v3l2 1.5"/></svg>
+                Full-time
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1.5" y="2.5" width="11" height="9" rx="1"/><path d="M4.5 1v2M9.5 1v2M1.5 6h11"/></svg>
+                28 July 2026
+              </span>
+            </div>
+            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hiring Process -->
+  <section id="process" class="py-16 lg:py-28 dark-gradient">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+      <div class="inline-flex items-center gap-2 mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+        <span class="text-xs font-bold text-cn-orange tracking-[0.18em] uppercase">Hiring Process</span>
+      </div>
+      <div class="max-w-[672px]">
+        <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] text-cn-green-light mb-4">What happens after you apply</h2>
+        <p class="text-base text-white/70 leading-relaxed">Five clear stages. You'll hear from our recruitment team as you move through each one.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-12">
+        <!-- Step 1 -->
+        <div>
+          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
+            <span class="font-sora font-bold text-sm text-white">01</span>
+          </div>
+          <h4 class="font-sora font-semibold text-base text-white mb-2">Application Review</h4>
+          <p class="text-sm text-white/70 leading-relaxed">The recruitment team reviews submitted applications and shortlists candidates whose experience matches the role.</p>
+        </div>
+        <!-- Step 2 -->
+        <div>
+          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
+            <span class="font-sora font-bold text-sm text-white">02</span>
+          </div>
+          <h4 class="font-sora font-semibold text-base text-white mb-2">Initial Interview</h4>
+          <p class="text-sm text-white/70 leading-relaxed">A recruiter or hiring representative speaks with you to understand your experience, expectations, and suitability for the role.</p>
+        </div>
+        <!-- Step 3 -->
+        <div>
+          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
+            <span class="font-sora font-bold text-sm text-white">03</span>
+          </div>
+          <h4 class="font-sora font-semibold text-base text-white mb-2">Assessment</h4>
+          <p class="text-sm text-white/70 leading-relaxed">Depending on the position, you may complete a technical assessment, case study or practical task.</p>
+        </div>
+        <!-- Step 4 -->
+        <div>
+          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
+            <span class="font-sora font-bold text-sm text-white">04</span>
+          </div>
+          <h4 class="font-sora font-semibold text-base text-white mb-2">Team Interview</h4>
+          <p class="text-sm text-white/70 leading-relaxed">You meet the relevant hiring managers to discuss your experience, skills, and approach to solving problems.</p>
+        </div>
+        <!-- Step 5 -->
+        <div>
+          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
+            <span class="font-sora font-bold text-sm text-white">05</span>
+          </div>
+          <h4 class="font-sora font-semibold text-base text-white mb-2">Offer</h4>
+          <p class="text-sm text-white/70 leading-relaxed">Successful candidates receive an offer and proceed to onboarding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 lg:py-28 bg-cn-bg">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+      <div class="grid lg:grid-cols-[467px_1fr] gap-12">
+        <div>
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+            <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">FAQ</span>
+          </div>
+          <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">Questions candidates ask</h2>
+          <p class="text-base text-cn-text-secondary leading-relaxed">Still unsure about something? Send your CV with a note and our recruitment team will come back to you.</p>
+          <a href="submit-cv.html" class="inline-flex items-center gap-2 mt-8 px-6 py-3.5 rounded-full bg-cn-green text-sm font-semibold text-cn-btn-text shadow-[0px_8px_16px_-4px_rgba(0,74,40,0.06)] hover:bg-cn-green-dark transition">
+            Send Your CV
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+        <div class="flex flex-col">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item border-b border-cn-border">
+            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
+              <span class="font-sora font-semibold text-base text-cn-text-primary">How do I apply for a position?</span>
+              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
+            </button>
+            <div class="faq-content pb-4">
+              <p class="text-sm text-cn-text-secondary leading-relaxed">Click "View Job" on any open position, review the requirements, and click "Apply Now". Fill in your details, upload your CV, and submit. You'll receive a confirmation email shortly after.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 2 -->
+          <div class="faq-item border-b border-cn-border">
+            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
+              <span class="font-sora font-semibold text-base text-cn-text-primary">Can I apply for more than one position?</span>
+              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
+            </button>
+            <div class="faq-content pb-4">
+              <p class="text-sm text-cn-text-secondary leading-relaxed">Yes, you can apply for multiple positions that match your skills and experience. Each application is reviewed independently.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 3 -->
+          <div class="faq-item border-b border-cn-border">
+            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
+              <span class="font-sora font-semibold text-base text-cn-text-primary">What if I don't see a suitable position?</span>
+              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
+            </button>
+            <div class="faq-content pb-4">
+              <p class="text-sm text-cn-text-secondary leading-relaxed">Use the General Application form to send your CV. We'll keep it on file and reach out when a role matching your profile becomes available.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 4 -->
+          <div class="faq-item border-b border-cn-border">
+            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
+              <span class="font-sora font-semibold text-base text-cn-text-primary">How will I know if my application was successful?</span>
+              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
+            </button>
+            <div class="faq-content pb-4">
+              <p class="text-sm text-cn-text-secondary leading-relaxed">Our recruitment team will contact you via email if you've been shortlisted. We aim to respond within two weeks of your application.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 5 -->
+          <div class="faq-item border-b border-cn-border">
+            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
+              <span class="font-sora font-semibold text-base text-cn-text-primary">Can I apply if I don't live in Lagos?</span>
+              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
+            </button>
+            <div class="faq-content pb-4">
+              <p class="text-sm text-cn-text-secondary leading-relaxed">Absolutely. Many of our roles are remote-friendly. Check the job listing for specific location requirements.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 6 -->
+          <div class="faq-item border-b border-cn-border">
+            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
+              <span class="font-sora font-semibold text-base text-cn-text-primary">How long does the recruitment process take?</span>
+              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
+            </button>
+            <div class="faq-content pb-4">
+              <p class="text-sm text-cn-text-secondary leading-relaxed">Typically two to four weeks from application to offer, depending on the role and number of stages involved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- General Application -->
+  <section id="apply" class="py-16 lg:py-28 bg-cn-green-light">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
+      <div class="grid lg:grid-cols-[496px_1fr] gap-12 items-start">
+        <!-- Left Column -->
+        <div>
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+            <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">General Application</span>
+          </div>
+          <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">No suitable role open? Send your CV</h2>
+          <p class="text-base text-cn-text-secondary leading-relaxed mb-8">Tell us where you'd like to make an impact and attach your CV. We'll reach out when a role matches your profile.</p>
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-cn-green flex items-center justify-center flex-shrink-0">
+                <svg width="12" height="12" fill="none" stroke="white" stroke-width="2.5"><path d="M2 6l3 3 5-5"/></svg>
+              </div>
+              <span class="text-sm text-cn-text-secondary">Reviewed by our recruitment team</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-cn-green flex items-center justify-center flex-shrink-0">
+                <svg width="12" height="12" fill="none" stroke="white" stroke-width="2.5"><path d="M2 6l3 3 5-5"/></svg>
+              </div>
+              <span class="text-sm text-cn-text-secondary">Kept on file for future openings</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-cn-green flex items-center justify-center flex-shrink-0">
+                <svg width="12" height="12" fill="none" stroke="white" stroke-width="2.5"><path d="M2 6l3 3 5-5"/></svg>
+              </div>
+              <span class="text-sm text-cn-text-secondary">You can still apply for open roles anytime</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Form -->
+        <div class="bg-white border border-cn-border rounded-[28px] p-8 shadow-[0px_24px_48px_-24px_rgba(0,74,40,0.2),0px_2px_4px_rgba(0,74,40,0.06)]">
+          <form id="generalForm" class="grid md:grid-cols-2 gap-5">
+            <div class="md:col-span-2">
+              <label class="block text-sm font-semibold text-cn-text-primary mb-1.5">Full name</label>
+              <input type="text" placeholder="Amina Bello" class="w-full h-12 px-4 rounded-[18px] border border-cn-border bg-cn-bg text-sm focus:outline-none focus:border-cn-green" required>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-cn-text-primary mb-1.5">Email</label>
+              <input type="email" placeholder="you@email.com" class="w-full h-12 px-4 rounded-[18px] border border-cn-border bg-cn-bg text-sm focus:outline-none focus:border-cn-green" required>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-cn-text-primary mb-1.5">Phone number</label>
+              <input type="tel" placeholder="+234 800 000 0000" class="w-full h-12 px-4 rounded-[18px] border border-cn-border bg-cn-bg text-sm focus:outline-none focus:border-cn-green" required>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-cn-text-primary mb-1.5">Area of interest</label>
+              <select class="w-full h-12 px-4 rounded-[18px] border border-cn-border bg-cn-bg text-sm text-cn-text-secondary focus:outline-none focus:border-cn-green appearance-none" required>
+                <option value="">Select an area</option>
+                <option>Product</option>
+                <option>Technology</option>
+                <option>Content</option>
+                <option>Business</option>
+                <option>Design</option>
+                <option>Operations</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-cn-text-primary mb-1.5">LinkedIn / Portfolio <span class="font-normal text-xs text-cn-text-secondary">(Optional)</span></label>
+              <input type="url" placeholder="https://" class="w-full h-12 px-4 rounded-[18px] border border-cn-border bg-cn-bg text-sm focus:outline-none focus:border-cn-green">
+            </div>
+            <div class="md:col-span-2">
+              <label class="block text-sm font-semibold text-cn-text-primary mb-1.5">CV / Resume</label>
+              <div class="upload-area rounded-[18px] p-4 flex items-center gap-3 cursor-pointer hover:border-cn-green transition" id="cvUpload">
+                <div class="w-9 h-9 rounded-[14px] bg-cn-card-bg flex items-center justify-center flex-shrink-0">
+                  <svg width="18" height="18" fill="none" stroke="#004A28" stroke-width="1.5"><path d="M9 12V3M5 7l4-4 4 4"/><path d="M2 13v1a1 1 0 001 1h12a1 1 0 001-1v-1"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-cn-text-primary">Click to upload a file</p>
+                  <p class="text-xs text-cn-text-secondary">PDF, DOC or DOCX up to 10MB</p>
+                </div>
+                <input type="file" accept=".pdf,.doc,.docx" class="hidden" id="cvFile">
+              </div>
+              <p id="fileName" class="text-xs text-cn-text-secondary mt-2 hidden"></p>
+            </div>
+            <div class="md:col-span-2 flex justify-center">
+              <button type="submit" class="px-8 py-3 rounded-full bg-cn-green text-sm font-semibold text-cn-btn-text shadow-[0px_8px_16px_-4px_rgba(0,74,40,0.06)] hover:bg-cn-green-dark transition">Submit Application</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-cn-green-light border-t border-cn-border">
+    <div class="max-w-[1280px] mx-auto px-5 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <img src="images/logo.png" alt="Connect Nigeria" class="h-9 w-auto mb-4">
+          <p class="text-sm text-cn-text-secondary leading-relaxed max-w-[348px]">Organising Nigeria's information and making it easy to find and use — for businesses, professionals and everyone in between.</p>
+        </div>
+        <div>
+          <h4 class="font-manrope font-bold text-xs text-cn-text-primary uppercase tracking-wider mb-4">Careers</h4>
+          <ul class="flex flex-col gap-3">
+            <li><a href="#positions" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Open Positions</a></li>
+            <li><a href="#process" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Hiring Process</a></li>
+            <li><a href="submit-cv.html" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Send Your CV</a></li>
+            <li><a href="#faq" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-manrope font-bold text-xs text-cn-text-primary uppercase tracking-wider mb-4">About</h4>
+          <ul class="flex flex-col gap-3">
+            <li><a href="#culture" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Our Culture</a></li>
+            <li><a href="#culture" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Our Values</a></li>
+            <li><a href="#why" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Why Join Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-manrope font-bold text-xs text-cn-text-primary uppercase tracking-wider mb-4">Connect</h4>
+          <ul class="flex flex-col gap-3">
+            <li><a href="#" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Business</a></li>
+            <li><a href="#" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Articles</a></li>
+            <li><a href="#" class="text-sm text-cn-text-secondary hover:text-cn-text-primary transition">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-cn-border">
+      <div class="max-w-[1280px] mx-auto px-5 lg:px-8 py-6 text-center">
+        <p class="text-xs text-cn-text-secondary">&copy; 2026 ConnectNigeria.com — All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    });
+    closeMobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+    });
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+      });
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const chevron = btn.querySelector('.faq-chevron');
+        const isOpen = content.classList.contains('open');
+        
+        // Close all other items
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
+        document.querySelectorAll('.faq-chevron').forEach(c => c.style.transform = '');
+        
+        // Toggle current item
+        if (!isOpen) {
+          content.classList.add('open');
+          chevron.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Job filter
+    const searchInput = document.getElementById('searchInput');
+    const deptFilter = document.getElementById('deptFilter');
+    const typeFilter = document.getElementById('typeFilter');
+    const jobCards = document.querySelectorAll('.job-card');
+    const roleCount = document.getElementById('roleCount');
+
+    function filterJobs() {
+      const search = searchInput.value.toLowerCase();
+      const dept = deptFilter.value;
+      const type = typeFilter.value;
+      let count = 0;
+      jobCards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const desc = card.querySelector('p').textContent.toLowerCase();
+        const cardDept = card.dataset.dept;
+        const cardType = card.dataset.type;
+        const matchSearch = !search || title.includes(search) || desc.includes(search);
+        const matchDept = !dept || cardDept === dept;
+        const matchType = !type || cardType === type;
+        if (matchSearch && matchDept && matchType) {
+          card.style.display = '';
+          count++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      roleCount.textContent = count;
+    }
+    searchInput.addEventListener('input', filterJobs);
+    deptFilter.addEventListener('change', filterJobs);
+    typeFilter.addEventListener('change', filterJobs);
+
+    // CV Upload
+    const cvUpload = document.getElementById('cvUpload');
+    const cvFile = document.getElementById('cvFile');
+    const fileName = document.getElementById('fileName');
+    cvUpload.addEventListener('click', () => cvFile.click());
+    cvFile.addEventListener('change', () => {
+      if (cvFile.files.length) {
+        fileName.textContent = cvFile.files[0].name;
+        fileName.classList.remove('hidden');
+      }
+    });
+
+    // Form submit
+    document.getElementById('generalForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for your application! Our recruitment team will review it and get back to you.');
+      e.target.reset();
+      fileName.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
