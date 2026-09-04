@@ -59,10 +59,13 @@
     .faq-content {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.3s ease-out;
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+      padding-top: 0;
+      padding-bottom: 0;
     }
     .faq-content.open {
       max-height: 500px;
+      padding-bottom: 16px;
     }
     html { scroll-behavior: smooth; }
   </style>
@@ -183,7 +186,7 @@
         <!-- Card 1 -->
         <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
           <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
-            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M10 2l2.5 5 5.5.8-4 3.9.9 5.3L10 14.5 5.1 17l.9-5.3-4-3.9 5.5-.8z"/></svg>
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="1.5"><rect x="3" y="3" width="14" height="14" rx="2"/><rect x="7" y="7" width="6" height="6" rx="1"/></svg>
           </div>
           <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Meaningful Work</h3>
           <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Work on products and initiatives that connect people, businesses and opportunities across Nigeria.</p>
@@ -192,7 +195,7 @@
         <!-- Card 2 -->
         <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
           <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
-            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M4 16l4-4 3 3 5-6"/><path d="M14 6h4v4"/></svg>
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="1.5"><path d="M3 17V11M7 17V7M11 17V11M15 17V3"/></svg>
           </div>
           <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Growth & Learning</h3>
           <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Opportunities to develop new skills and take on meaningful responsibilities.</p>
@@ -201,7 +204,7 @@
         <!-- Card 3 -->
         <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
           <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
-            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="1.5"><circle cx="7" cy="7" r="3"/><circle cx="14" cy="7" r="3"/><path d="M1 17v-1a4 4 0 014-4h4a4 4 0 014 4v1"/><path d="M14 12a4 4 0 014 4v1"/></svg>
           </div>
           <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Collaborative Team</h3>
           <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Work with people across product, technology, business, content and operations.</p>
@@ -210,7 +213,7 @@
         <!-- Card 4 -->
         <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
           <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
-            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="1.5"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="3"/><path d="M10 3V1M10 19v-2M3 10H1M19 10h-2"/></svg>
           </div>
           <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Ownership</h3>
           <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Employees are encouraged to take responsibility for their work and contribute ideas.</p>
@@ -219,7 +222,7 @@
         <!-- Card 5 -->
         <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
           <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
-            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M12.24 12.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M12.24 11.76l2.83-2.83"/></svg>
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="1.5"><path d="M10 2L12 8H18L13 12L15 18L10 14L5 18L7 12L2 8H8L10 2Z"/></svg>
           </div>
           <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Innovation</h3>
           <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Solve real problems for Nigerian businesses and consumers with products that ship.</p>
@@ -228,7 +231,7 @@
         <!-- Card 6 -->
         <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
           <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
-            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="1.5"><path d="M5 17L10 7L15 12L19 5"/></svg>
           </div>
           <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Career Development</h3>
           <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Grow professionally as the company and its products evolve.</p>
@@ -625,9 +628,9 @@
         <div class="faq-item border-b border-neutral-300">
           <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
             <span class="font-sora font-semibold text-base text-cn-text-primary">How do I apply for a position?</span>
-            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
           </button>
-          <div class="faq-content pb-4">
+          <div class="faq-content">
             <p class="text-sm text-cn-text-secondary leading-relaxed">Click "View Job" on any open position, review the requirements, and click "Apply Now". Fill in your details, upload your CV, and submit. You'll receive a confirmation email shortly after.</p>
           </div>
         </div>
@@ -635,9 +638,9 @@
         <div class="faq-item border-b border-neutral-300">
           <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
             <span class="font-sora font-semibold text-base text-cn-text-primary">Can I apply for more than one position?</span>
-            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
           </button>
-          <div class="faq-content pb-4">
+          <div class="faq-content">
             <p class="text-sm text-cn-text-secondary leading-relaxed">Yes, you can apply for multiple positions that match your skills and experience. Each application is reviewed independently.</p>
           </div>
         </div>
@@ -645,9 +648,9 @@
         <div class="faq-item border-b border-neutral-300">
           <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
             <span class="font-sora font-semibold text-base text-cn-text-primary">What if I don't see a suitable position?</span>
-            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
           </button>
-          <div class="faq-content pb-4">
+          <div class="faq-content">
             <p class="text-sm text-cn-text-secondary leading-relaxed">Use the General Application form to send your CV. We'll keep it on file and reach out when a role matching your profile becomes available.</p>
           </div>
         </div>
@@ -655,9 +658,9 @@
         <div class="faq-item border-b border-neutral-300">
           <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
             <span class="font-sora font-semibold text-base text-cn-text-primary">How will I know if my application was successful?</span>
-            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
           </button>
-          <div class="faq-content pb-4">
+          <div class="faq-content">
             <p class="text-sm text-cn-text-secondary leading-relaxed">Our recruitment team will contact you via email if you've been shortlisted. We aim to respond within two weeks of your application.</p>
           </div>
         </div>
@@ -665,9 +668,9 @@
         <div class="faq-item border-b border-neutral-300">
           <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
             <span class="font-sora font-semibold text-base text-cn-text-primary">Can I apply if I don't live in Lagos?</span>
-            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
           </button>
-          <div class="faq-content pb-4">
+          <div class="faq-content">
             <p class="text-sm text-cn-text-secondary leading-relaxed">Absolutely. Many of our roles are remote-friendly. Check the job listing for specific location requirements.</p>
           </div>
         </div>
@@ -675,9 +678,9 @@
         <div class="faq-item border-b border-neutral-300">
           <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
             <span class="font-sora font-semibold text-base text-cn-text-primary">How long does the recruitment process take?</span>
-            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
           </button>
-          <div class="faq-content pb-4">
+          <div class="faq-content">
             <p class="text-sm text-cn-text-secondary leading-relaxed">Typically two to four weeks from application to offer, depending on the role and number of stages involved.</p>
           </div>
         </div>
@@ -845,7 +848,7 @@
         
         // Close all other items
         document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
-        document.querySelectorAll('.faq-chevron').forEach(c => c.style.transform = '');
+        document.querySelectorAll('.faq-chevron').forEach(c => c.style.transform = 'rotate(0deg)');
         
         // Toggle current item
         if (!isOpen) {
