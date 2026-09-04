@@ -114,8 +114,8 @@
 
   <!-- Hero Section -->
   <section class="relative pt-[72px] overflow-hidden">
-    <div class="absolute top-0 left-0 w-full h-full">
-      <div class="hero-gradient absolute top-0 left-1/4 w-[1440px] h-[1440px] opacity-40"></div>
+    <div class="absolute top-0 right-0 w-full h-full overflow-hidden">
+      <div class="hero-gradient absolute top-[-200px] right-[-200px] w-[600px] h-[600px] opacity-40"></div>
     </div>
     <div class="relative max-w-[1280px] mx-auto px-5 lg:px-8 py-16 lg:py-24">
       <div class="grid lg:grid-cols-[1fr_551px] gap-14 items-center">
@@ -155,7 +155,8 @@
           </div>
         </div>
         <div class="relative hidden lg:block">
-          <div class="rounded-[32px] overflow-hidden shadow-[0px_24px_48px_-24px_rgba(0,74,40,0.4),0px_2px_4px_rgba(0,74,40,0.06)]">
+          <div class="absolute -top-5 -left-5 w-28 h-28 opacity-90 bg-gradient-to-br from-cn-green to-cn-green-dark rounded-3xl"></div>
+          <div class="relative rounded-[32px] overflow-hidden shadow-[0px_24px_48px_-24px_rgba(0,74,40,0.4),0px_2px_4px_rgba(0,74,40,0.06)]">
             <img src="images/hero-team.png" alt="Team collaboration" class="w-full h-[546px] object-cover">
           </div>
           <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-5 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] max-w-[342px]">
@@ -170,62 +171,68 @@
   <!-- Why Connect Nigeria -->
   <section id="why" class="py-16 lg:py-28 bg-cn-green-light">
     <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
-      <div class="inline-flex items-center gap-2 mb-4">
-        <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
-        <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">Why Connect Nigeria</span>
-      </div>
       <div class="max-w-[672px]">
+        <div class="inline-flex items-center gap-2 mb-4">
+          <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+          <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">Why Connect Nigeria</span>
+        </div>
         <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">Reasons people stay, and grow, here</h2>
         <p class="text-base text-cn-text-secondary leading-relaxed">We're a team of builders, writers, sellers and operators working on one shared mission: organising Nigeria's information and making it easy to find and use.</p>
       </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 pt-12">
         <!-- Card 1 -->
-        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
-            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M10 2l2.5 5 5.5.8-4 3.9.9 5.3L10 14.5 5.1 17l.9-5.3-4-3.9 5.5-.8z"/></svg>
+        <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
+          <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M10 2l2.5 5 5.5.8-4 3.9.9 5.3L10 14.5 5.1 17l.9-5.3-4-3.9 5.5-.8z"/></svg>
           </div>
-          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Meaningful Work</h3>
-          <p class="text-sm text-cn-text-secondary leading-relaxed">Work on products and initiatives that connect people, businesses and opportunities across Nigeria.</p>
+          <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Meaningful Work</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Work on products and initiatives that connect people, businesses and opportunities across Nigeria.</p>
+          <span class="absolute right-4 top-4 font-manrope text-4xl font-black text-stone-200 leading-10">01</span>
         </div>
         <!-- Card 2 -->
-        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
-            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M4 16l4-4 3 3 5-6"/><path d="M14 6h4v4"/></svg>
+        <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
+          <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M4 16l4-4 3 3 5-6"/><path d="M14 6h4v4"/></svg>
           </div>
-          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Growth & Learning</h3>
-          <p class="text-sm text-cn-text-secondary leading-relaxed">Opportunities to develop new skills and take on meaningful responsibilities.</p>
+          <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Growth & Learning</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Opportunities to develop new skills and take on meaningful responsibilities.</p>
+          <span class="absolute right-4 top-4 font-manrope text-4xl font-black text-stone-200 leading-10">02</span>
         </div>
         <!-- Card 3 -->
-        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
-            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
+          <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Collaborative Team</h3>
-          <p class="text-sm text-cn-text-secondary leading-relaxed">Work with people across product, technology, business, content and operations.</p>
+          <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Collaborative Team</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Work with people across product, technology, business, content and operations.</p>
+          <span class="absolute right-4 top-4 font-manrope text-4xl font-black text-stone-200 leading-10">03</span>
         </div>
         <!-- Card 4 -->
-        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
-            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+        <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
+          <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
           </div>
-          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Ownership</h3>
-          <p class="text-sm text-cn-text-secondary leading-relaxed">Employees are encouraged to take responsibility for their work and contribute ideas.</p>
+          <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Ownership</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Employees are encouraged to take responsibility for their work and contribute ideas.</p>
+          <span class="absolute right-4 top-4 font-manrope text-4xl font-black text-stone-200 leading-10">04</span>
         </div>
         <!-- Card 5 -->
-        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
-            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M12.24 12.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M12.24 11.76l2.83-2.83"/></svg>
+        <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
+          <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M12.24 12.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M12.24 11.76l2.83-2.83"/></svg>
           </div>
-          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Innovation</h3>
-          <p class="text-sm text-cn-text-secondary leading-relaxed">Solve real problems for Nigerian businesses and consumers with products that ship.</p>
+          <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Innovation</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Solve real problems for Nigerian businesses and consumers with products that ship.</p>
+          <span class="absolute right-4 top-4 font-manrope text-4xl font-black text-stone-200 leading-10">05</span>
         </div>
         <!-- Card 6 -->
-        <div class="bg-white border border-cn-border rounded-[22px] p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-          <div class="w-11 h-11 rounded-[18px] bg-cn-card-bg flex items-center justify-center mb-4">
-            <svg width="20" height="20" fill="none" stroke="#004A28" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        <div class="relative bg-white rounded-3xl p-6 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300 overflow-hidden">
+          <div class="w-11 h-11 bg-gradient-to-br from-lime-400 to-cn-green rounded-2xl flex items-center justify-center mb-0">
+            <svg width="20" height="20" fill="none" stroke="#00220A" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </div>
-          <h3 class="font-sora font-bold text-lg text-cn-text-primary mb-1">Career Development</h3>
-          <p class="text-sm text-cn-text-secondary leading-relaxed">Grow professionally as the company and its products evolve.</p>
+          <h3 class="font-sora font-semibold text-lg text-cn-text-primary pt-5">Career Development</h3>
+          <p class="text-sm text-cn-text-secondary leading-relaxed pt-2">Grow professionally as the company and its products evolve.</p>
+          <span class="absolute right-4 top-4 font-manrope text-4xl font-black text-stone-200 leading-10">06</span>
         </div>
       </div>
     </div>
@@ -234,70 +241,77 @@
   <!-- Culture & Values -->
   <section id="culture" class="py-16 lg:py-28 bg-cn-bg">
     <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
-      <div class="inline-flex items-center gap-2 mb-4">
-        <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
-        <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">Our Culture & Values</span>
-      </div>
-      <div class="max-w-[672px]">
+      <div class="max-w-[672px] lg:ml-auto lg:text-right">
+        <div class="inline-flex items-center gap-2 mb-4">
+          <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+          <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">Our Culture & Values</span>
+        </div>
         <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">How we work with each other</h2>
         <p class="text-base text-cn-text-secondary leading-relaxed">Our culture is practical. We keep teams small, decisions close to the work, and feedback direct. Four values guide everything we ship.</p>
       </div>
-      <div class="grid lg:grid-cols-[551px_1fr] gap-14 mt-10">
+      <div class="grid lg:grid-cols-[1fr_609px] gap-10 lg:gap-14 mt-10">
         <!-- Photos -->
         <div class="relative">
-          <div class="flex gap-4 sm:gap-7">
-            <div class="rounded-[28px] overflow-hidden w-[calc(50%-8px)] sm:w-[267px] aspect-square">
-              <img src="images/culture-1.png" alt="Colleagues in conversation" class="w-full h-full object-cover">
+          <div class="flex flex-col sm:flex-row gap-4 sm:gap-7">
+            <div class="sm:pt-10">
+              <div class="rounded-3xl overflow-hidden w-full sm:w-[268px] aspect-square shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] border border-neutral-300">
+                <img src="images/culture-1.png" alt="Colleagues in conversation" class="w-full h-full object-cover">
+              </div>
             </div>
-            <div class="rounded-[28px] overflow-hidden w-[calc(50%-8px)] sm:w-[267px] h-[200px] sm:h-[334px]">
+            <div class="rounded-3xl overflow-hidden w-full sm:w-[268px] h-[250px] sm:h-[334px] shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.35),0px_1px_2px_rgba(0,74,40,0.06)] border border-neutral-300">
               <img src="images/culture-2.png" alt="Engineer at work" class="w-full h-full object-cover">
             </div>
           </div>
-          <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 tipp-gradient rounded-[22px] px-5 py-3 text-center">
-            <p class="font-sora font-bold text-sm text-white tracking-widest">TIPP</p>
-            <p class="text-[11px] text-white/80">Our core values</p>
+          <div class="hidden sm:block absolute left-[202px] top-[242px] bg-gradient-to-b from-green-950 to-green-900 rounded-3xl px-6 py-4 shadow-[0px_24px_48px_-24px_rgba(0,74,40,0.4),0px_2px_4px_rgba(0,74,40,0.06)]">
+            <p class="font-sora font-extrabold text-2xl text-lime-50 tracking-[7.2px] text-center">TIPP</p>
+            <p class="text-[10.4px] text-lime-50/70 font-medium font-manrope uppercase tracking-wide text-center pt-1">Our core values</p>
+          </div>
+          <div class="sm:hidden bg-gradient-to-b from-green-950 to-green-900 rounded-3xl px-6 py-4 shadow-[0px_24px_48px_-24px_rgba(0,74,40,0.4),0px_2px_4px_rgba(0,74,40,0.06)] mt-4 text-center">
+            <p class="font-sora font-extrabold text-2xl text-lime-50 tracking-[7.2px]">TIPP</p>
+            <p class="text-[10.4px] text-lime-50/70 font-medium font-manrope uppercase tracking-wide pt-1">Our core values</p>
           </div>
         </div>
-        <!-- TIPP Values -->
-        <div class="flex flex-col gap-4">
+        <!-- Right Column - TIPP Values -->
+        <div>
+          <div class="flex flex-col gap-3">
           <!-- Teamwork -->
-          <div class="bg-white border border-cn-border rounded-[22px] p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-            <div class="w-10 h-10 rounded-full bg-cn-green-accent flex items-center justify-center flex-shrink-0">
-              <span class="font-sora font-bold text-sm text-white">T</span>
+          <div class="bg-white rounded-3xl p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300">
+            <div class="w-11 h-11 rounded-2xl bg-stone-200 flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-lg text-cn-green-accent">T</span>
             </div>
             <div>
-              <h4 class="font-sora font-bold text-base text-cn-text-primary mb-1">Teamwork</h4>
-              <p class="text-sm text-cn-text-secondary leading-relaxed">We work together, share knowledge and support one another to achieve better outcomes.</p>
+              <h4 class="font-sora font-semibold text-base text-cn-text-primary">Teamwork</h4>
+              <p class="text-sm text-cn-text-secondary leading-relaxed pt-1">We work together, share knowledge and support one another to achieve better outcomes.</p>
             </div>
           </div>
           <!-- Innovation -->
-          <div class="bg-white border border-cn-border rounded-[22px] p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-            <div class="w-10 h-10 rounded-full bg-cn-green-accent flex items-center justify-center flex-shrink-0">
-              <span class="font-sora font-bold text-sm text-white">I</span>
+          <div class="bg-white rounded-3xl p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300">
+            <div class="w-11 h-11 rounded-2xl bg-stone-200 flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-lg text-cn-green-accent">I</span>
             </div>
             <div>
-              <h4 class="font-sora font-bold text-base text-cn-text-primary mb-1">Innovation</h4>
-              <p class="text-sm text-cn-text-secondary leading-relaxed">We look for better ways to solve problems and create value for our users and customers.</p>
+              <h4 class="font-sora font-semibold text-base text-cn-text-primary">Innovation</h4>
+              <p class="text-sm text-cn-text-secondary leading-relaxed pt-1">We look for better ways to solve problems and create value for our users and customers.</p>
             </div>
           </div>
           <!-- Professionalism -->
-          <div class="bg-white border border-cn-border rounded-[22px] p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-            <div class="w-10 h-10 rounded-full bg-cn-green-accent flex items-center justify-center flex-shrink-0">
-              <span class="font-sora font-bold text-sm text-white">P</span>
+          <div class="bg-white rounded-3xl p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300">
+            <div class="w-11 h-11 rounded-2xl bg-stone-200 flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-lg text-cn-green-accent">P</span>
             </div>
             <div>
-              <h4 class="font-sora font-bold text-base text-cn-text-primary mb-1">Professionalism</h4>
-              <p class="text-sm text-cn-text-secondary leading-relaxed">We hold ourselves to high standards in how we work, communicate, and deliver.</p>
+              <h4 class="font-sora font-semibold text-base text-cn-text-primary">Professionalism</h4>
+              <p class="text-sm text-cn-text-secondary leading-relaxed pt-1">We hold ourselves to high standards in how we work, communicate, and deliver.</p>
             </div>
           </div>
           <!-- Passion -->
-          <div class="bg-white border border-cn-border rounded-[22px] p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)]">
-            <div class="w-10 h-10 rounded-full bg-cn-green-accent flex items-center justify-center flex-shrink-0">
-              <span class="font-sora font-bold text-sm text-white">P</span>
+          <div class="bg-white rounded-3xl p-5 flex items-start gap-4 shadow-[0px_12px_32px_-18px_rgba(0,74,40,0.1),0px_1px_2px_rgba(0,74,40,0.06)] outline outline-1 outline-offset-[-1px] outline-neutral-300">
+            <div class="w-11 h-11 rounded-2xl bg-stone-200 flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-lg text-cn-green-accent">P</span>
             </div>
             <div>
-              <h4 class="font-sora font-bold text-base text-cn-text-primary mb-1">Passion</h4>
-              <p class="text-sm text-cn-text-secondary leading-relaxed">We care about what we do and are committed to making a meaningful impact.</p>
+              <h4 class="font-sora font-semibold text-base text-cn-text-primary">Passion</h4>
+              <p class="text-sm text-cn-text-secondary leading-relaxed pt-1">We care about what we do and are committed to making a meaningful impact.</p>
             </div>
           </div>
         </div>
@@ -372,7 +386,7 @@
                 27 August 2026
               </span>
             </div>
-            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+            <a href="job-detail.html" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></a>
           </div>
         </div>
 
@@ -401,7 +415,7 @@
                 20 August 2026
               </span>
             </div>
-            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+            <a href="job-detail.html" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></a>
           </div>
         </div>
 
@@ -430,7 +444,7 @@
                 14 August 2026
               </span>
             </div>
-            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+            <a href="job-detail.html" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></a>
           </div>
         </div>
 
@@ -459,7 +473,7 @@
                 8 August 2026
               </span>
             </div>
-            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+            <a href="job-detail.html" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></a>
           </div>
         </div>
 
@@ -488,7 +502,7 @@
                 2 August 2026
               </span>
             </div>
-            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+            <a href="job-detail.html" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></a>
           </div>
         </div>
 
@@ -517,7 +531,7 @@
                 28 July 2026
               </span>
             </div>
-            <a href="job-detail.html" class="px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job</a>
+            <a href="job-detail.html" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-cn-green-accent text-xs font-semibold text-cn-btn-text hover:bg-cn-green-dark transition">View Job <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></a>
           </div>
         </div>
       </div>
@@ -525,137 +539,146 @@
   </section>
 
   <!-- Hiring Process -->
-  <section id="process" class="py-16 lg:py-28 dark-gradient">
-    <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
-      <div class="inline-flex items-center gap-2 mb-4">
-        <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
-        <span class="text-xs font-bold text-cn-orange tracking-[0.18em] uppercase">Hiring Process</span>
-      </div>
+  <section id="process" class="py-16 lg:py-28 relative bg-gradient-to-b from-green-950 to-green-900 overflow-hidden">
+    <div class="absolute left-[-128px] top-[218px] w-96 h-96 opacity-20 bg-cn-green rounded-full blur-3xl"></div>
+    <div class="relative max-w-[1280px] mx-auto px-5 lg:px-8">
       <div class="max-w-[672px]">
-        <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] text-cn-green-light mb-4">What happens after you apply</h2>
-        <p class="text-base text-white/70 leading-relaxed">Five clear stages. You'll hear from our recruitment team as you move through each one.</p>
+        <div class="inline-flex items-center gap-2 mb-4">
+          <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+          <span class="text-xs font-bold text-cn-green tracking-[0.18em] uppercase">Hiring Process</span>
+        </div>
+        <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] text-lime-50 mb-4">What happens after you apply</h2>
+        <p class="text-base text-lime-50/75 leading-relaxed">Five clear stages. You'll hear from our recruitment team as you move through each one.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-12">
+      <div class="flex flex-col lg:flex-row gap-6 lg:gap-0 pt-14">
         <!-- Step 1 -->
-        <div>
-          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
-            <span class="font-sora font-bold text-sm text-white">01</span>
+        <div class="flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-base text-green-950">1</span>
+            </div>
+            <div class="flex-1 h-px bg-lime-50/20"></div>
           </div>
-          <h4 class="font-sora font-semibold text-base text-white mb-2">Application Review</h4>
-          <p class="text-sm text-white/70 leading-relaxed">The recruitment team reviews submitted applications and shortlists candidates whose experience matches the role.</p>
+          <h4 class="font-sora font-semibold text-lg text-lime-50 pt-5">Application Review</h4>
+          <p class="text-sm text-lime-50/70 leading-relaxed pt-2">The recruitment team reviews submitted applications and shortlists candidates whose experience matches the role.</p>
         </div>
         <!-- Step 2 -->
-        <div>
-          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
-            <span class="font-sora font-bold text-sm text-white">02</span>
+        <div class="flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-base text-green-950">2</span>
+            </div>
+            <div class="flex-1 h-px bg-lime-50/20"></div>
           </div>
-          <h4 class="font-sora font-semibold text-base text-white mb-2">Initial Interview</h4>
-          <p class="text-sm text-white/70 leading-relaxed">A recruiter or hiring representative speaks with you to understand your experience, expectations, and suitability for the role.</p>
+          <h4 class="font-sora font-semibold text-lg text-lime-50 pt-5">Initial Interview</h4>
+          <p class="text-sm text-lime-50/70 leading-relaxed pt-2">A recruiter or hiring representative speaks with you to understand your experience, expectations, and suitability for the role.</p>
         </div>
         <!-- Step 3 -->
-        <div>
-          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
-            <span class="font-sora font-bold text-sm text-white">03</span>
+        <div class="flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-base text-green-950">3</span>
+            </div>
+            <div class="flex-1 h-px bg-lime-50/20"></div>
           </div>
-          <h4 class="font-sora font-semibold text-base text-white mb-2">Assessment</h4>
-          <p class="text-sm text-white/70 leading-relaxed">Depending on the position, you may complete a technical assessment, case study or practical task.</p>
+          <h4 class="font-sora font-semibold text-lg text-lime-50 pt-5">Assessment</h4>
+          <p class="text-sm text-lime-50/70 leading-relaxed pt-2">Depending on the position, you may complete a technical assessment, case study or practical task.</p>
         </div>
         <!-- Step 4 -->
-        <div>
-          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
-            <span class="font-sora font-bold text-sm text-white">04</span>
+        <div class="flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-base text-green-950">4</span>
+            </div>
+            <div class="flex-1 h-px bg-lime-50/20"></div>
           </div>
-          <h4 class="font-sora font-semibold text-base text-white mb-2">Team Interview</h4>
-          <p class="text-sm text-white/70 leading-relaxed">You meet the relevant hiring managers to discuss your experience, skills, and approach to solving problems.</p>
+          <h4 class="font-sora font-semibold text-lg text-lime-50 pt-5">Team Interview</h4>
+          <p class="text-sm text-lime-50/70 leading-relaxed pt-2">You meet the relevant hiring managers to discuss your experience, skills, and approach to solving problems.</p>
         </div>
         <!-- Step 5 -->
-        <div>
-          <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center mb-4">
-            <span class="font-sora font-bold text-sm text-white">05</span>
+        <div class="flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-cn-green flex items-center justify-center flex-shrink-0">
+              <span class="font-sora font-bold text-base text-green-950">5</span>
+            </div>
           </div>
-          <h4 class="font-sora font-semibold text-base text-white mb-2">Offer</h4>
-          <p class="text-sm text-white/70 leading-relaxed">Successful candidates receive an offer and proceed to onboarding.</p>
+          <h4 class="font-sora font-semibold text-lg text-lime-50 pt-5">Offer</h4>
+          <p class="text-sm text-lime-50/70 leading-relaxed pt-2">Successful candidates receive an offer and proceed to onboarding.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="py-16 lg:py-28 bg-cn-bg">
+  <section id="faq" class="py-28 bg-stone-50">
     <div class="max-w-[1280px] mx-auto px-5 lg:px-8">
-      <div class="grid lg:grid-cols-[467px_1fr] gap-12">
-        <div>
-          <div class="inline-flex items-center gap-2 mb-4">
-            <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
-            <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">FAQ</span>
-          </div>
-          <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">Questions candidates ask</h2>
-          <p class="text-base text-cn-text-secondary leading-relaxed">Still unsure about something? Send your CV with a note and our recruitment team will come back to you.</p>
-          <a href="submit-cv.html" class="inline-flex items-center gap-2 mt-8 px-6 py-3.5 rounded-full bg-cn-green text-sm font-semibold text-cn-btn-text shadow-[0px_8px_16px_-4px_rgba(0,74,40,0.06)] hover:bg-cn-green-dark transition">
-            Send Your CV
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          </a>
+      <div class="max-w-[467px] mb-10">
+        <div class="inline-flex items-center gap-2 mb-4">
+          <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
+          <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">FAQ</span>
         </div>
-        <div class="flex flex-col">
-          <!-- FAQ Item 1 -->
-          <div class="faq-item border-b border-cn-border">
-            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
-              <span class="font-sora font-semibold text-base text-cn-text-primary">How do I apply for a position?</span>
-              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
-            </button>
-            <div class="faq-content pb-4">
-              <p class="text-sm text-cn-text-secondary leading-relaxed">Click "View Job" on any open position, review the requirements, and click "Apply Now". Fill in your details, upload your CV, and submit. You'll receive a confirmation email shortly after.</p>
-            </div>
+        <h2 class="font-sora text-4xl font-bold leading-10 tracking-[-0.02em] mb-4">Questions candidates ask</h2>
+        <p class="text-base text-cn-text-secondary leading-relaxed">Still unsure about something? Send your CV with a note and our recruitment team will come back to you.</p>
+      </div>
+      <div class="flex flex-col">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item border-b border-neutral-300">
+          <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
+            <span class="font-sora font-semibold text-base text-cn-text-primary">How do I apply for a position?</span>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+          </button>
+          <div class="faq-content pb-4">
+            <p class="text-sm text-cn-text-secondary leading-relaxed">Click "View Job" on any open position, review the requirements, and click "Apply Now". Fill in your details, upload your CV, and submit. You'll receive a confirmation email shortly after.</p>
           </div>
-          <!-- FAQ Item 2 -->
-          <div class="faq-item border-b border-cn-border">
-            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
-              <span class="font-sora font-semibold text-base text-cn-text-primary">Can I apply for more than one position?</span>
-              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
-            </button>
-            <div class="faq-content pb-4">
-              <p class="text-sm text-cn-text-secondary leading-relaxed">Yes, you can apply for multiple positions that match your skills and experience. Each application is reviewed independently.</p>
-            </div>
+        </div>
+        <!-- FAQ Item 2 -->
+        <div class="faq-item border-b border-neutral-300">
+          <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
+            <span class="font-sora font-semibold text-base text-cn-text-primary">Can I apply for more than one position?</span>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+          </button>
+          <div class="faq-content pb-4">
+            <p class="text-sm text-cn-text-secondary leading-relaxed">Yes, you can apply for multiple positions that match your skills and experience. Each application is reviewed independently.</p>
           </div>
-          <!-- FAQ Item 3 -->
-          <div class="faq-item border-b border-cn-border">
-            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
-              <span class="font-sora font-semibold text-base text-cn-text-primary">What if I don't see a suitable position?</span>
-              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
-            </button>
-            <div class="faq-content pb-4">
-              <p class="text-sm text-cn-text-secondary leading-relaxed">Use the General Application form to send your CV. We'll keep it on file and reach out when a role matching your profile becomes available.</p>
-            </div>
+        </div>
+        <!-- FAQ Item 3 -->
+        <div class="faq-item border-b border-neutral-300">
+          <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
+            <span class="font-sora font-semibold text-base text-cn-text-primary">What if I don't see a suitable position?</span>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+          </button>
+          <div class="faq-content pb-4">
+            <p class="text-sm text-cn-text-secondary leading-relaxed">Use the General Application form to send your CV. We'll keep it on file and reach out when a role matching your profile becomes available.</p>
           </div>
-          <!-- FAQ Item 4 -->
-          <div class="faq-item border-b border-cn-border">
-            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
-              <span class="font-sora font-semibold text-base text-cn-text-primary">How will I know if my application was successful?</span>
-              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
-            </button>
-            <div class="faq-content pb-4">
-              <p class="text-sm text-cn-text-secondary leading-relaxed">Our recruitment team will contact you via email if you've been shortlisted. We aim to respond within two weeks of your application.</p>
-            </div>
+        </div>
+        <!-- FAQ Item 4 -->
+        <div class="faq-item border-b border-neutral-300">
+          <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
+            <span class="font-sora font-semibold text-base text-cn-text-primary">How will I know if my application was successful?</span>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+          </button>
+          <div class="faq-content pb-4">
+            <p class="text-sm text-cn-text-secondary leading-relaxed">Our recruitment team will contact you via email if you've been shortlisted. We aim to respond within two weeks of your application.</p>
           </div>
-          <!-- FAQ Item 5 -->
-          <div class="faq-item border-b border-cn-border">
-            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
-              <span class="font-sora font-semibold text-base text-cn-text-primary">Can I apply if I don't live in Lagos?</span>
-              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
-            </button>
-            <div class="faq-content pb-4">
-              <p class="text-sm text-cn-text-secondary leading-relaxed">Absolutely. Many of our roles are remote-friendly. Check the job listing for specific location requirements.</p>
-            </div>
+        </div>
+        <!-- FAQ Item 5 -->
+        <div class="faq-item border-b border-neutral-300">
+          <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
+            <span class="font-sora font-semibold text-base text-cn-text-primary">Can I apply if I don't live in Lagos?</span>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+          </button>
+          <div class="faq-content pb-4">
+            <p class="text-sm text-cn-text-secondary leading-relaxed">Absolutely. Many of our roles are remote-friendly. Check the job listing for specific location requirements.</p>
           </div>
-          <!-- FAQ Item 6 -->
-          <div class="faq-item border-b border-cn-border">
-            <button class="faq-toggle w-full flex items-center justify-between py-4 text-left">
-              <span class="font-sora font-semibold text-base text-cn-text-primary">How long does the recruitment process take?</span>
-              <svg class="faq-chevron w-5 h-5 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l4 4 4-4"/></svg>
-            </button>
-            <div class="faq-content pb-4">
-              <p class="text-sm text-cn-text-secondary leading-relaxed">Typically two to four weeks from application to offer, depending on the role and number of stages involved.</p>
-            </div>
+        </div>
+        <!-- FAQ Item 6 -->
+        <div class="faq-item border-b border-neutral-300">
+          <button class="faq-toggle w-full h-14 py-4 inline-flex justify-between items-center text-left">
+            <span class="font-sora font-semibold text-base text-cn-text-primary">How long does the recruitment process take?</span>
+            <svg class="faq-chevron w-4 h-4 text-cn-text-secondary transition-transform" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 8h16"/></svg>
+          </button>
+          <div class="faq-content pb-4">
+            <p class="text-sm text-cn-text-secondary leading-relaxed">Typically two to four weeks from application to offer, depending on the role and number of stages involved.</p>
           </div>
         </div>
       </div>
@@ -672,7 +695,7 @@
             <span class="w-1.5 h-1.5 rounded-full bg-cn-orange"></span>
             <span class="text-xs font-bold text-cn-green-dark tracking-[0.18em] uppercase">General Application</span>
           </div>
-          <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4">No suitable role open? Send your CV</h2>
+          <h2 class="font-sora text-3xl sm:text-4xl lg:text-[44px] font-bold leading-tight lg:leading-[48.89px] tracking-[-0.02em] mb-4 text-cn-green-accent">No suitable role open? Send your CV</h2>
           <p class="text-base text-cn-text-secondary leading-relaxed mb-8">Tell us where you'd like to make an impact and attach your CV. We'll reach out when a role matches your profile.</p>
           <div class="flex flex-col gap-3">
             <div class="flex items-center gap-3">
